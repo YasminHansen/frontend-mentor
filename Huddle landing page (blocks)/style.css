@@ -97,11 +97,50 @@ footer{
     background-color:  hsl(192, 100%, 9%);
     color: #fff;
     padding-bottom: 30px;
+    position: relative;
+    margin-top: 180px;
+}
+footer .ready-box{
+    position: absolute;
+    top: -110px;
+    width: 100%;
+    z-index: 999;
+}
+footer .ready-box div{
+    background-color: #fff;
+    box-shadow: 0px 0px 3px #dfdfdf;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    padding: 35px 20px;
+    text-transform: capitalize;
+    text-align: center;
+    width: max-content;
+}
+footer .ready-box p{
+    color: #000;
+    font-weight: bold;
+    font-size: 19px;
+}
+footer .ready-box button{
+    background-color: hsl(322, 100%, 66%);
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 10px 55px;
+    text-transform: capitalize;   
+}
+footer .container{
+    padding-top: 130px;
 }
 footer img{
     filter: grayscale(100%) brightness(10);
     height: 30px;
     margin-bottom: 20px;
+    padding-left: 15px;
 }
 footer .block.info{
     padding-bottom: 20px;
@@ -192,9 +231,15 @@ footer .copyright{
     }
 
     footer img{
-        padding-left: 15px;
         margin-bottom: 40px;
     }
+    footer .ready-box div{
+        padding: 35px 85px;
+    }
+    footer .ready-box p{
+        font-size: 25px;
+    }
+
     footer .footer-content{
         display: flex;;
     }
@@ -209,8 +254,6 @@ footer .copyright{
     footer .block .icons{
         margin: 0;
         justify-content: start;
-    }
-    footer .block.icons i{
     }
     footer .copyright{
         font-size: 10px;
