@@ -98,13 +98,13 @@ footer{
     color: #fff;
     padding-bottom: 30px;
 }
-footer .block.info{
-    padding-bottom: 20px;
-}
-footer .block.info img{
+footer img{
     filter: grayscale(100%) brightness(10);
     height: 30px;
     margin-bottom: 20px;
+}
+footer .block.info{
+    padding-bottom: 20px;
 }
 footer .block.info div{
     display: flex;
@@ -124,13 +124,13 @@ footer .block.links{
 footer .block.links a{
     margin-bottom: 15px;
 }
-footer .block.icons{
+footer .block .icons{
     display: flex;
     justify-content: center;
     margin-top: 40px;
     margin-bottom: 20px;
 }
-footer .block.icons i{
+footer .block .icons i{
     align-items: center;
     border: 1px solid #fff;
     border-radius: 50px;
@@ -139,7 +139,7 @@ footer .block.icons i{
     height: 35px;
     width: 35px;
 }
-footer .block.icons i::before{
+footer .block .icons i::before{
     margin: auto;
 }
 footer .copyright{
@@ -189,5 +189,31 @@ footer .copyright{
     }
     .cards .card:nth-child(odd){
         flex-direction: row-reverse;  
+    }
+
+    footer img{
+        padding-left: 15px;
+        margin-bottom: 40px;
+    }
+    footer .footer-content{
+        display: flex;;
+    }
+    footer .block.info .locate{
+        padding-right: 45px;
+    }
+    footer .icon-copyright{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    footer .block .icons{
+        margin: 0;
+        justify-content: start;
+    }
+    footer .block.icons i{
+    }
+    footer .copyright{
+        font-size: 10px;
+        text-align: left;
     }
 }
