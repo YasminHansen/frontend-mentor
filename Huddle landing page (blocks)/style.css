@@ -96,9 +96,56 @@ body{
 footer{
     background-color:  hsl(192, 100%, 9%);
     color: #fff;
+    padding-bottom: 30px;
 }
-footer .block01 img{
-    filter: grayscale(100%) brightness(10)
+footer .block.info{
+    padding-bottom: 20px;
+}
+footer .block.info img{
+    filter: grayscale(100%) brightness(10);
+    height: 30px;
+    margin-bottom: 20px;
+}
+footer .block.info div{
+    display: flex;
+    margin-bottom: 20px;
+}
+footer .block.info i{
+    height: max-content;
+    margin: auto 20px auto 0;
+}
+footer .block.info .locate i{
+    margin-top: 5px;
+}
+footer .block.links{
+    display: flex;
+    flex-direction: column;
+}
+footer .block.links a{
+    margin-bottom: 15px;
+}
+footer .block.icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+footer .block.icons i{
+    align-items: center;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    display: flex;
+    margin-right: 15px;
+    height: 35px;
+    width: 35px;
+}
+footer .block.icons i::before{
+    margin: auto;
+}
+footer .copyright{
+    font-size: 12px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 @media (min-width: 992px){
     .header .header-top{
