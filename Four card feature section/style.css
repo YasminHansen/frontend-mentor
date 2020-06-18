@@ -69,5 +69,18 @@ body{
     height: auto;
 }
 @media (min-width: 992px){
-
+    .header h4{
+        font-size: 2.35rem;
+    }
+    .header p{
+        width: 550px;
+        margin: auto;
+    }
+    .cards-list{
+        display: flex;
+    }
+    .cards-list .card-block1,
+    .cards-list .card-block3{
+        margin: auto 0;
+    }
 }
