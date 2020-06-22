@@ -15,11 +15,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet"> 
 </head>
-<body>
-    <div id="content">
+<body id="content">
+    <div>
         <header>
-            <div class="menu">
-                <img src="assets/logo.svg">
+            <div class="menu" id="menu">
+                <a><img src="assets/logo.svg"></a>
                 <nav class="menu-desktop" id="menu-desktop">
                     <ul class="menu-desktop-options">
                         <li>
@@ -58,20 +58,25 @@
                 </ul>
             </nav>
         </header>
-        <div class="banner">
-            <div class="banner-text">
-                <h1>Humanizing your insurance.</h1>
-                <p>Get your insurance coverage easier and faster. We blend our expertise and technology to help you find
-                    the plan that's right for you. Ensure you and your loved ones are protected.
-                </p>
-                <button>View plans</button>
+        <div  class="banner">
+            <div id="banner-content" class="banner-content">
+                <div class="banner-text col-lg-6">
+                    <hr>
+                    <h1>Humanizing your insurance.</h1>
+                    <p>Get your insurance coverage easier and faster. We blend our expertise and technology to help you find
+                        the plan that's right for you. Ensure you and your loved ones are protected.
+                    </p>
+                    <button>View plans</button>
+                </div>
+                <div class="banner-img col-lg-6">
+                    <img src="assets/image-intro-desktop.jpg" id="image-desktop" class="image-desktop">
+                    <img src="assets/image-intro-mobile.jpg" id="image-mobile" class="image-mobile">
+                </div>
             </div>
-            <div class="banner-img">
-                <img src="assets/image-intro-desktop.jpg" id="image-desktop" class="image-desktop">
-                <img src="assets/image-intro-mobile.jpg" id="image-mobile" class="image-mobile">
-            </div>
+            <div class="banner-bg-image-desk"></div>
+            <div class="banner-bg-image"></div>
         </div>
-        <div class="bannner-bg-image"></div>
+
     </div>
     <script src='main.js'></script>
 </body>

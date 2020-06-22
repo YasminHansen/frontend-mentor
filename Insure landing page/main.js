@@ -9,7 +9,8 @@ if(windowWidth < 992){
 else{
     document.getElementById("image-desktop").classList.add('active');
     document.getElementById("menu-desktop").classList.add('active');
-    document.getElementById("content").classList.add('container')
+    document.getElementById("menu").classList.add('container');
+    document.getElementById("banner-content").classList.add('container');
 }
 
 function openMenuMobile(){
@@ -33,13 +34,21 @@ function verifyWindowSize(){
         document.getElementById("menu-mobile-buttons").classList.add('active');
         document.getElementById("image-desktop").classList.remove('active');
         document.getElementById("menu-desktop").classList.remove('active');
-        document.getElementById("content").classList.remove('container')
+        document.getElementById("menu").classList.remove('container');
+        document.getElementById("banner-content").classList.remove('container');
+        if(windowWidth >= 991){
+            document.getElementById("open-menu-mobile").style.display = "block";
+        }
     }
     else{
         document.getElementById("image-desktop").classList.add('active');
         document.getElementById("menu-desktop").classList.add('active');
-        document.getElementById("content").classList.add('container')
+        document.getElementById("menu").classList.add('container');
+        document.getElementById("banner-content").classList.add('container');
         document.getElementById("image-mobile").classList.remove('active');
         document.getElementById("menu-mobile-buttons").classList.remove('active');
+        document.getElementById("menu-mobile").classList.remove('active');
+        document.getElementById("close-menu-mobile").classList.remove('active');
+        document.getElementById("content").classList.remove('block-scroll');
     }
 }

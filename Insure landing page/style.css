@@ -11,7 +11,7 @@
 
 body, html {
     height: 100%;
-    font-family: var(--main-font);
+    font-family: var(--main-font) !important;
 }
 .block-scroll {
     height: 100%;
@@ -62,12 +62,14 @@ body, html {
     background-image: url("assets/bg-pattern-mobile-nav.svg");
     background-position-y: bottom;
     background-repeat: no-repeat;
+    background-size: contain;
     height: 94vh;
     left: 0;
     padding: 15px;
     position: fixed;
     text-align: center;
     width: 100%;
+    z-index: 1;
 }
 .menu-mobile .menu-mobile-options a{
     color: #fff;
@@ -82,19 +84,28 @@ body, html {
 }
 
 /*--- BANNER ---*/
+hr{
+    display: none;
+}
 .banner{
+    background-color: var(--dark-violet-color);
+}
+.banner .banner-content{
     display: flex;
     flex-direction: column-reverse;
+    position: relative;
+    z-index: 9;
 }
-
+.banner .banner-img,
+.banner .banner-text{
+    padding: 0;
+}
 .banner .banner-img .image-mobile{
     width: 100%;
     height: auto;
 }
 .banner .banner-text{
-    background: url("assets/bg-pattern-intro-left-mobile.svg") no-repeat left top, 
-                url("assets//bg-pattern-intro-right-mobile.svg") no-repeat right bottom,
-                var(--dark-violet-color);
+    background: url("assets/bg-pattern-intro-left-mobile.svg") no-repeat left top;
     color: var(--white-color);
     text-align: center;
     padding: 80px 20px;
@@ -116,17 +127,31 @@ body, html {
     border: 2px solid var(--white-color);
     background-color: unset;
     color: var(--white-color);
+    cursor: pointer;
     margin-top: 30px;
     padding: 5px 25px;
     text-transform: uppercase;
+}
+.banner-bg-image{
+    background: url("assets//bg-pattern-intro-right-mobile.svg") no-repeat right bottom;
+    height: 330px;
+    margin-top: -150px;
+    position: absolute;
+    width: 100%;
 }
 /*====================
 ------ DESKTOP -------
 =====================*/
 
 @media (min-width: 992px){
+    header{
+        background-color: var(--white-color);
+        position: relative;
+        z-index: 999;
+    }
     .menu{
         padding: 25px 0;
+        z-index: 1;
     }
     .menu-desktop .menu-desktop-options{
         display: flex;
@@ -140,5 +165,70 @@ body, html {
     }
     .menu-desktop .menu-desktop-options a:hover{
         border-color: var(--dark-violet-color);
+    }
+    /*--- BANNER ---*/
+    .banner{
+        color: var(--white-color);
+        height: 600px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+    }
+    .banner .banner-content{
+        flex-direction: row;
+        height: 100%;
+        padding: 0;
+    }
+    .banner div{
+        margin: auto;
+        display: flex;
+    }
+    .banner .banner-img img{
+        position: absolute;
+    }
+    .banner .banner-text{
+        background-image: unset;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: left;
+    }
+    .banner .banner-text hr{
+        border: 1px solid var(--grayish-blue-color);
+        display: block;
+        margin: -15px 0 70px 0;
+        width: 100px;
+    }
+    .banner .banner-text h1, 
+    .banner .banner-text p{
+        margin: 0;
+        max-width: none;
+    }
+    .banner .banner-text h1{
+        font-size: 70px;
+        line-height: 65px;
+        margin-bottom: 30px;
+    }
+    .banner .banner-text button{
+        width: max-content;
+    }
+    .banner .banner-img{
+        margin: 108px 0 0 0;
+    }
+    .banner-bg-image{
+        background: url("assets/bg-pattern-intro-left-desktop.svg") no-repeat left bottom;
+        left: 0;
+        height: 505px;
+        margin: -200px 0 0 0 !important;
+        width: 195px;
+    }
+    .banner-bg-image-desk{
+        background: url("assets/bg-pattern-intro-right-desktop.svg") no-repeat right top;
+        position: absolute;
+        height: 600px;
+        top: -80px;
+        right: 0;
+        width: 440px;
+        z-index: 99;
     }
 }
