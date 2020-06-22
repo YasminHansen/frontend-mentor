@@ -11,6 +11,7 @@
 
 body, html {
     height: 100%;
+    font-family: var(--main-font);
 }
 .block-scroll {
     height: 100%;
@@ -51,7 +52,6 @@ body, html {
 }
 .menu ul li a, 
 .menu-mobile ul li a{
-    font-family: var(--main-font);
     border: 2px solid;
     padding: 10px;
     text-decoration: none;
@@ -80,6 +80,49 @@ body, html {
 .menu-mobile .menu-mobile-options a:hover{
     border-color: var(--very-light-gray);
 }
+
+/*--- BANNER ---*/
+.banner{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.banner .banner-img .image-mobile{
+    width: 100%;
+    height: auto;
+}
+.banner .banner-text{
+    background: url("assets/bg-pattern-intro-left-mobile.svg") no-repeat left top, 
+                url("assets//bg-pattern-intro-right-mobile.svg") no-repeat right bottom,
+                var(--dark-violet-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 80px 20px;
+}
+.banner .banner-text h1, 
+.banner .banner-text p{
+    margin: auto;
+    max-width: 300px;
+}
+.banner .banner-text h1{
+    font-family: var(--detail-font);
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+.banner .banner-text p{
+    font-size: 15px;
+}
+.banner .banner-text button{
+    border: 2px solid var(--white-color);
+    background-color: unset;
+    color: var(--white-color);
+    margin-top: 30px;
+    padding: 5px 25px;
+    text-transform: uppercase;
+}
+/*====================
+------ DESKTOP -------
+=====================*/
 
 @media (min-width: 992px){
     .menu{
