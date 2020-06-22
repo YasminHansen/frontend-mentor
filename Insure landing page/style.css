@@ -69,7 +69,7 @@ body, html {
     position: fixed;
     text-align: center;
     width: 100%;
-    z-index: 1;
+    z-index: 9999;
 }
 .menu-mobile .menu-mobile-options a{
     color: #fff;
@@ -138,6 +138,35 @@ hr{
     margin-top: -150px;
     position: absolute;
     width: 100%;
+}
+
+/*--- MAIN BLOCK ---*/
+.main-block{
+    text-align: center;
+    margin-top: 120px;
+}
+.main-block .main-text hr{
+    border-color: var(--dark-grayish-violet);
+    display: flex;
+    margin-bottom: 40px;
+    width: 130px;
+}
+.main-block .main-text h1,
+.main-block .main-text .cards h4{
+    font-family: var(--detail-font);
+}
+.main-block .main-text h1{
+    margin-bottom: 65px;
+}
+.main-block .main-text .cards{
+    margin-bottom: 50px;
+}
+.main-block .main-text .cards h4{
+    margin: 30px 0 15px 0;
+}
+.main-block .main-text .cards p{
+    color: var(--dark-grayish-violet);
+    font-size: 14px;
 }
 /*====================
 ------ DESKTOP -------
