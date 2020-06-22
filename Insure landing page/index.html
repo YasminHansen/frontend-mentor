@@ -12,45 +12,51 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet"> 
 </head>
-<body>
-    <header class="menu">
-        <img src="assets/logo.svg">
-        <nav class="menu-desktop" id="menu-desktop">
-            <ul>
-                <li>
-                    <a href="#">How we work</a>
-                </li>
-                <li>
-                    <a href="#">Blog</a>
-                </li>
-                <li>
-                    <a href="#">Account</a>
-                </li>
-                <li>
-                    <a href="#">View plans</a>
-                </li>
-            </ul>
-        </nav>
+<body id="body">
+    <header>
+        <div class="menu">
+            <img src="assets/logo.svg">
+            <nav class="menu-desktop" id="menu-desktop">
+                <ul>
+                    <li>
+                        <a href="#">How we work</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Account</a>
+                    </li>
+                    <li>
+                        <a href="#">View plans</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="menu-mobile-buttons" id="menu-mobile-buttons">
+                <button class="open-menu-mobile" id="open-menu-mobile" onclick="openMenuMobile()"><i class="fas fa-bars"></i></button>
+                <button class="close-menu-mobile" id="close-menu-mobile" onclick="closeMenuMobile()"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
         <nav class="menu-mobile" id="menu-mobile">
-            <button class="open-menu-mobile" id="open-menu-mobile" onclick="openMenuMobile()"><i class="fas fa-bars"></i></button>
-            <button class="close-menu-mobile" id="close-menu-mobile" onclick="closeMenuMobile()"><i class="fas fa-times"></i></button>
-            <ul class="menu-mobile-options" id="menu-mobile-options">
-                <li>
-                    <a href="#">How we work</a>
-                </li>
-                <li>
-                    <a href="#">Blog</a>
-                </li>
-                <li>
-                    <a href="#">Account</a>
-                </li>
-                <li>
-                    <a href="#">View plans</a>
-                </li>
-            </ul>
+            <div class="container">
+                <ul class="menu-mobile-options" id="menu-mobile-options">
+                    <li>
+                        <a href="#">How we work</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Account</a>
+                    </li>
+                    <li>
+                        <a href="#">View plans</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
     <div class="banner">
