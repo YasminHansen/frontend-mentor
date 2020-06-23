@@ -5,6 +5,7 @@
     --dark-grayish-violet: hsl(273, 4%, 51%);
     --very-light-gray: hsl(0, 0%, 98%);
     --white-color: #fff;
+    --black-color: #000;
     --main-font: 'Karla';
     --detail-font: 'DM Serif Display';
 }
@@ -12,6 +13,13 @@
 body, html {
     height: 100%;
     font-family: var(--main-font) !important;
+}
+button{
+    background-color: unset;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    padding:  5px 25px;
+    text-transform: uppercase !important;
 }
 .block-scroll {
     height: 100%;
@@ -56,6 +64,9 @@ body, html {
     padding: 10px;
     text-decoration: none;
     text-transform: uppercase;
+}
+.menu .menu-mobile-buttons button{
+    color: var(--black-color);
 }
 .menu-mobile .menu-mobile-options{
     background-color: var(--very-dark-violet);
@@ -124,16 +135,10 @@ hr{
     font-size: 15px;
 }
 .banner .banner-text button{
-    border: 2px solid var(--white-color);
-    background-color: unset;
-    color: var(--white-color);
-    cursor: pointer;
     margin-top: 30px;
-    padding: 5px 25px;
-    text-transform: uppercase;
 }
 .banner-bg-image{
-    background: url("assets//bg-pattern-intro-right-mobile.svg") no-repeat right bottom;
+    background: url("assets/bg-pattern-intro-right-mobile.svg") no-repeat right bottom;
     height: 330px;
     margin-top: -150px;
     position: absolute;
@@ -168,6 +173,20 @@ hr{
     color: var(--dark-grayish-violet);
     font-size: 14px;
 }
+
+/*--- BLOCK HOW WE WORK ---*/
+.main-block .main-block-howwework{
+    background: url("assets/bg-pattern-how-we-work-mobile.svg") no-repeat right top,
+                var(--dark-violet-color);
+    color: var(--white-color);
+    padding: 70px 20px;
+}
+.main-block .main-block-howwework h1{
+    font-family: var(--detail-font);
+}
+.main-block .main-block-howwework button{
+    margin-top: 30px;
+}
 /*====================
 ------ DESKTOP -------
 =====================*/
@@ -199,8 +218,6 @@ hr{
     .banner{
         color: var(--white-color);
         height: 600px;
-        /* left: 0;
-        position: absolute; */
         width: 100%;
  
     }
@@ -268,16 +285,37 @@ hr{
         margin-top: 260px;
         text-align: left;
     }
-    .main-block hr{
-        margin-left: 15px;
-    }
     .main-block h1{
         font-size: 3rem;
         margin-bottom: 50px;
-        padding-left: 15px;
     }
     
     .main-block .main-text{
         display: flex;
+    }
+    .main-block .main-text .cards{
+        padding: 0
+    }
+    .main-block .main-text .cards:nth-child(2){
+        padding: 0 15px;
+    }
+
+    /*--- BLOCK HOW WE WORK ---*/
+    .main-block .main-block-howwework{
+        align-items: center;
+        background: url("assets/bg-pattern-how-we-work-desktop.svg") no-repeat right top,
+                    var(--dark-violet-color);
+        display: flex;
+        padding: 50px 100px;
+        justify-content: space-between;
+    }
+    .main-block .main-block-howwework h1{
+        line-height: 45px;
+        margin-bottom: 0;
+        max-width: 440px;
+    }
+    .main-block .main-block-howwework button{
+        height: max-content;
+        margin: 0;
     }
 }
