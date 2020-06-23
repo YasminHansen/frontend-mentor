@@ -358,4 +358,28 @@ footer hr{
         height: max-content;
         margin: 0;
     }
+
+    /*--- FOOTER ---*/
+    footer{
+        background: url('assets/bg-pattern-footer-desktop.svg') no-repeat left top,
+                    var(--very-light-gray);
+    }
+    .footer-icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-icons img{
+        height: 100%;
+        margin: auto 0;
+    }
+    .footer-icons .icons-group{
+        height: max-content;
+        width: max-content;
+    }
+    .footer-links{
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
 }
