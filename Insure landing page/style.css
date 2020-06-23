@@ -187,6 +187,45 @@ hr{
 .main-block .main-block-howwework button{
     margin-top: 30px;
 }
+
+/*--- FOOTER ---*/
+footer{
+    background: url('assets/bg-pattern-footer-mobile.svg') no-repeat top,
+                var(--very-light-gray);
+    margin-top: 110px;
+    padding-bottom: 110px;
+    text-align: center; 
+}
+footer hr{
+    display: block;
+    margin: 30px 0;
+    width: 100%;
+}
+.footer-icons{
+    padding-top: 80px;
+}
+.footer-icons .icons-group{
+    margin-top: 25px;
+}
+.footer-icons .icons-group a{
+    margin: 0 5px;
+}
+.footer-links{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.footer-links p{
+    color: var(--dark-grayish-violet);
+    margin: 20px 0 30px 0;
+}
+.footer-links div{
+    display: flex;
+    flex-direction: column;
+}
+.footer-links div a{
+    color: var(--very-dark-violet);
+    margin: 5px 0;
+}
 /*====================
 ------ DESKTOP -------
 =====================*/
@@ -203,6 +242,7 @@ hr{
     }
     .menu-desktop .menu-desktop-options{
         display: flex;
+        margin: 0;
     }
     .menu-desktop .menu-desktop-options a{
         border-color: var(--white-color);
