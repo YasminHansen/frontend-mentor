@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <link rel="shortcut icon" href="assets/favicon-32x32.png" />
+    <title>Insure landing page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet"> 
+</head>
+<body id="content">
+    <div>
+        <header>
+            <div class="menu content" id="menu">
+                <a><img src="assets/logo.svg"></a>
+                <nav class="menu-desktop" id="menu-desktop">
+                    <ul class="menu-desktop-options">
+                        <li>
+                            <a href="#">How we work</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Account</a>
+                        </li>
+                        <li>
+                            <a href="#">View plans</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu-mobile-buttons" id="menu-mobile-buttons">
+                    <button class="open-menu-mobile" id="open-menu-mobile" onclick="openMenuMobile()"><i class="fas fa-bars"></i></button>
+                    <button class="close-menu-mobile" id="close-menu-mobile" onclick="closeMenuMobile()"><i class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <nav class="menu-mobile" id="menu-mobile">
+                <ul class="menu-mobile-options" id="menu-mobile-options">
+                    <li>
+                        <a href="#">How we work</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Account</a>
+                    </li>
+                    <li>
+                        <a href="#">View plans</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="banner">
+            <div id="banner-content" class="banner-content content">
+                <div class="banner-text col-lg-6">
+                    <hr>
+                    <h1>Humanizing your insurance.</h1>
+                    <p>Get your insurance coverage easier and faster. We blend our expertise and technology to help you find
+                        the plan that's right for you. Ensure you and your loved ones are protected.
+                    </p>
+                    <button>View plans</button>
+                </div>
+                <div class="banner-img col-lg-6">
+                    <img src="assets/image-intro-desktop.jpg" id="image-desktop" class="image-desktop">
+                    <img src="assets/image-intro-mobile.jpg" id="image-mobile" class="image-mobile">
+                </div>
+            </div>
+            <div class="banner-bg-image-desk"></div>
+            <div class="banner-bg-image"></div>
+        </div>
+        
+        <main class="main-block container">
+            <hr>   
+            <h1>We're different</h1>
+            <div class="main-text">
+                <div class="cards col-lg-4">
+                    <img src="assets/icon-snappy-process.svg">
+                    <h4>Snappy Process</h4>
+                    <p>Our application process can be completed in minutes, not hours. Don't get stuck filling in tedious forms.</p>
+                </div>
+                <div class="cards col-lg-4">
+                    <img src="assets/icon-affordable-prices.svg">
+                    <h4>Affordable Prices</h4>
+                    <p>We don't want you worrying about high monthly costs. Our prices may be low, but we still offer the best coverage possible.</p>
+                </div>
+                <div class="cards col-lg-4">
+                    <img src="assets/icon-people-first.svg">
+                    <h4>People First</h4>
+                    <p>Our plans aren't full of conditions and clauses to prevent payouts. We make sure you're covered when you need it.</p>
+                </div>
+            </div>
+            <div class="main-block-howwework">
+                <h1>Find out more about how we work</h1>
+                <button>How we work</button>
+            </div>
+        </main>
+        <footer>
+            <div class="container">
+                <div class="footer-icons">
+                    <img src="assets/logo.svg">
+                    <div class="icons-group">
+                        <a href="#"><img src="assets/icon-facebook.svg"></a>
+                        <a href="#"><img src="assets/icon-twitter.svg"></a>
+                        <a href="#"><img src="assets/icon-pinterest.svg"></a>
+                        <a href="#"><img src="assets/icon-instagram.svg"></a>
+                    </div>
+                </div>
+                <hr>
+                <div class="footer-links">
+                    <div>
+                        <p>Our company</p>
+                        <div>
+                            <a href="#">How we work</a>
+                            <a href="#">Why insure?</a>
+                            <a href="#">Check price</a>
+                            <a href="#">Reviews</a>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Help me</p>
+                        <div>
+                            <a href="#">FAQ</a>
+                            <a href="#">Terms of use</a>
+                            <a href="#">Privacy policy</a>
+                            <a href="#">Cookies</a>
+                        </div>
+                    </div>
+                    <div>
+                        <p>Contact</p>
+                        <div>
+                            <a href="#">Sales</a>
+                            <a href="#">Support</a>
+                            <a href="#">Live chat</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <p>Others</p>
+                            <a href="#">Carrers</a>
+                            <a href="#">Press</a>
+                            <a href="#">Licenses</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>

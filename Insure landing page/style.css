@@ -1,0 +1,385 @@
+:root{
+    --dark-violet-color: hsl(256, 26%, 20%);
+    --grayish-blue-color: hsl(216, 30%, 68%);
+    --very-dark-violet: hsl(270, 9%, 17%);
+    --dark-grayish-violet: hsl(273, 4%, 51%);
+    --very-light-gray: hsl(0, 0%, 98%);
+    --white-color: #fff;
+    --black-color: #000;
+    --main-font: 'Karla';
+    --detail-font: 'DM Serif Display';
+}
+
+body, html {
+    height: 100%;
+    font-family: var(--main-font) !important;
+}
+button{
+    background-color: unset;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    padding:  5px 25px;
+    text-transform: uppercase !important;
+}
+.block-scroll {
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-mobile,
+.image-desktop,
+.menu-desktop,
+.menu-mobile,
+.menu-mobile-buttons,
+.close-menu-mobile{
+    display: none;
+}
+
+.active{
+    display: block;
+}
+
+.menu{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.menu img{
+    height: 100%;
+}
+.menu button{
+    background-color: unset;
+    border: 1px solid var(--very-dark-violet);
+    padding: 1px 7px 2px 7px;
+    width: 30px;
+}
+.menu ul li,
+.menu-mobile ul li{
+    list-style: none;
+}
+.menu ul li a, 
+.menu-mobile ul li a{
+    border: 2px solid;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu .menu-mobile-buttons button{
+    color: var(--black-color);
+}
+.menu-mobile .menu-mobile-options{
+    background-color: var(--very-dark-violet);
+    background-image: url("assets/bg-pattern-mobile-nav.svg");
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 94vh;
+    left: 0;
+    padding: 15px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 9999;
+}
+.menu-mobile .menu-mobile-options a{
+    color: #fff;
+    display: block;
+    border-color: var(--very-dark-violet);
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 2px;
+}
+.menu-mobile .menu-mobile-options a:hover{
+    border-color: var(--very-light-gray);
+}
+
+/*--- BANNER ---*/
+hr{
+    display: none;
+}
+.banner{
+    background-color: var(--dark-violet-color);
+}
+.banner .banner-content{
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    z-index: 9;
+}
+.banner .banner-img,
+.banner .banner-text{
+    padding: 0;
+}
+.banner .banner-img .image-mobile{
+    width: 100%;
+    height: auto;
+}
+.banner .banner-text{
+    background: url("assets/bg-pattern-intro-left-mobile.svg") no-repeat left top;
+    color: var(--white-color);
+    text-align: center;
+    padding: 80px 20px;
+}
+.banner .banner-text h1, 
+.banner .banner-text p{
+    margin: auto;
+    max-width: 300px;
+}
+.banner .banner-text h1{
+    font-family: var(--detail-font);
+    line-height: 40px;
+    margin-bottom: 15px;
+}
+.banner .banner-text p{
+    font-size: 15px;
+}
+.banner .banner-text button{
+    margin-top: 30px;
+}
+.banner-bg-image{
+    background: url("assets/bg-pattern-intro-right-mobile.svg") no-repeat right bottom;
+    height: 330px;
+    margin-top: -150px;
+    position: absolute;
+    width: 100%;
+}
+
+/*--- MAIN BLOCK ---*/
+.main-block{
+    text-align: center;
+    margin-top: 120px;
+}
+.main-block hr{
+    border-color: var(--dark-grayish-violet);
+    display: flex;
+    margin-bottom: 40px;
+    width: 130px;
+}
+.main-block h1,
+.main-block .main-text .cards h4{
+    font-family: var(--detail-font);
+}
+.main-block .main-text h1{
+    margin-bottom: 65px;
+}
+.main-block .main-text .cards{
+    margin-bottom: 50px;
+}
+.main-block .main-text .cards h4{
+    margin: 30px 0 15px 0;
+}
+.main-block .main-text .cards p{
+    color: var(--dark-grayish-violet);
+    font-size: 14px;
+}
+
+/*--- BLOCK HOW WE WORK ---*/
+.main-block .main-block-howwework{
+    background: url("assets/bg-pattern-how-we-work-mobile.svg") no-repeat right top,
+                var(--dark-violet-color);
+    color: var(--white-color);
+    padding: 70px 20px;
+}
+.main-block .main-block-howwework h1{
+    font-family: var(--detail-font);
+}
+.main-block .main-block-howwework button{
+    margin-top: 30px;
+}
+
+/*--- FOOTER ---*/
+footer{
+    background: url('assets/bg-pattern-footer-mobile.svg') no-repeat top,
+                var(--very-light-gray);
+    margin-top: 110px;
+    padding-bottom: 110px;
+    text-align: center; 
+}
+footer hr{
+    display: block;
+    margin: 30px 0;
+    width: 100%;
+}
+.footer-icons{
+    padding-top: 80px;
+}
+.footer-icons .icons-group{
+    margin-top: 25px;
+}
+.footer-icons .icons-group a{
+    margin: 0 5px;
+}
+.footer-links{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.footer-links p{
+    color: var(--dark-grayish-violet);
+    margin: 20px 0 30px 0;
+}
+.footer-links div{
+    display: flex;
+    flex-direction: column;
+}
+.footer-links div a{
+    color: var(--very-dark-violet);
+    margin: 5px 0;
+}
+/*====================
+------ DESKTOP -------
+=====================*/
+
+@media (min-width: 992px){
+    header{
+        background-color: var(--white-color);
+        position: relative;
+        z-index: 999;
+    }
+    .menu{
+        padding: 25px 0;
+        z-index: 1;
+    }
+    .menu-desktop .menu-desktop-options{
+        display: flex;
+        margin: 0;
+    }
+    .menu-desktop .menu-desktop-options a{
+        border-color: var(--white-color);
+        color: var(--dark-violet-color);
+        font-weight: 400;
+        margin-left: 2px;
+        padding: 10px 25px;
+    }
+    .menu-desktop .menu-desktop-options a:hover{
+        border-color: var(--dark-violet-color);
+    }
+    /*--- BANNER ---*/
+    .banner{
+        color: var(--white-color);
+        height: 600px;
+        width: 100%;
+ 
+    }
+    .banner .banner-content{
+        flex-direction: row;
+        height: 100%;
+        margin-bottom: 108px;
+        padding: 0;
+    }
+    .banner div{
+        margin: auto;
+        display: flex;
+    }
+    .banner .banner-img img{
+        position: absolute;
+    }
+    .banner .banner-text{
+        background-image: unset;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        text-align: left;
+    }
+    .banner .banner-text hr{
+        border: 1px solid var(--grayish-blue-color);
+        display: block;
+        margin: -15px 0 70px 0;
+        width: 100px;
+    }
+    .banner .banner-text h1, 
+    .banner .banner-text p{
+        margin: 0;
+        max-width: none;
+    }
+    .banner .banner-text h1{
+        font-size: 70px;
+        line-height: 65px;
+        margin-bottom: 30px;
+    }
+    .banner .banner-text button{
+        width: max-content;
+    }
+    .banner .banner-img{
+        margin: 108px 0 0 0;
+    }
+    .banner-bg-image{
+        background: url("assets/bg-pattern-intro-left-desktop.svg") no-repeat left bottom;
+        left: 0;
+        height: 505px;
+        margin: -325px 0 0 0 !important;
+        width: 195px;
+    }
+    .banner-bg-image-desk{
+        background: url("assets/bg-pattern-intro-right-desktop.svg") no-repeat right top;
+        position: absolute;
+        height: 600px;
+        top: 0;
+        right: 0;
+        width: 440px;
+        z-index: 99;
+    }
+    
+    /*--- MAIN BLOCK ---*/
+    .main-block{
+        margin-top: 260px;
+        text-align: left;
+    }
+    .main-block h1{
+        font-size: 3rem;
+        margin-bottom: 50px;
+    }
+    
+    .main-block .main-text{
+        display: flex;
+    }
+    .main-block .main-text .cards{
+        padding: 0
+    }
+    .main-block .main-text .cards:nth-child(2){
+        padding: 0 15px;
+    }
+
+    /*--- BLOCK HOW WE WORK ---*/
+    .main-block .main-block-howwework{
+        align-items: center;
+        background: url("assets/bg-pattern-how-we-work-desktop.svg") no-repeat right top,
+                    var(--dark-violet-color);
+        display: flex;
+        padding: 50px 100px;
+        justify-content: space-between;
+    }
+    .main-block .main-block-howwework h1{
+        line-height: 45px;
+        margin-bottom: 0;
+        max-width: 440px;
+    }
+    .main-block .main-block-howwework button{
+        height: max-content;
+        margin: 0;
+    }
+
+    /*--- FOOTER ---*/
+    footer{
+        background: url('assets/bg-pattern-footer-desktop.svg') no-repeat left top,
+                    var(--very-light-gray);
+    }
+    .footer-icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer-icons img{
+        height: 100%;
+        margin: auto 0;
+    }
+    .footer-icons .icons-group{
+        height: max-content;
+        width: max-content;
+    }
+    .footer-links{
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
